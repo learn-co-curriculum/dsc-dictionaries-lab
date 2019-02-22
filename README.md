@@ -2,7 +2,7 @@
 # Working with Dictionaries - Lab
 
 ## Introduction
-Now that we know about dictionaries in Python, it is time to practice using them. In this lesson, we'll use our knowledge of dictionaries to retrieve and assign data about various cities.
+Now that we know about dictionaries in Python, it is time to practice using them. In this lesson, you'll use your knowledge of dictionaries to retrieve and assign data about various cities.
 
 ## Objectives
 You will be able to:
@@ -59,7 +59,8 @@ We can retrieve our data from an excel or Google sheets like the one [shown here
 
 Lukily for us, we already have the spreadsheet downloaded and located in the current folder.  You can find the file in this lessons the GitHub repository. Next, we will use a Library called **Pandas** to get this data from the excel file into Python code. We already have the code for reading an excel file into Python written for us below. Let's check it out.
 
-> **Note:** To import a library or module in Python, we do so by writing `import` followed by the name of the thing we want to import. We can optionally include an *alias* for our import, which is done by writing **as** after the name of the thing we are importing followed by the name we would like to use for our *alias*. **Do not worry** about aliases right now. Just know that the *convention* for importing the pandas library is to import it and alias it as `pd` like we see below. 
+> **Note:** To import a library or module in Python, we do so by writing `import` followed by the name of the thing we want to import. We can optionally include an *alias* for our import, which is done by writing **as** after the name of the thing we are importing followed by the name we would like to use for our *alias*. **Do not worry** about aliases right now. Just know that the *convention* for importing the pandas library is to import it and alias it as `pd` like we see below.   
+We'll talk about packages and pandas specifically in much more detail soon enough!
 
 
 ```python
