@@ -51,11 +51,11 @@ city_values = list(greenville.values())
 city_values # [68, 'Greenville', 'USA', 84554]
 ```
 
-### Working with multiple cities
+## Working with multiple cities
 
 We can retrieve our data from an excel or Google sheets like the one [shown here](https://docs.google.com/spreadsheets/d/1BTJMMFH9t4p5UmHj5kiC6PGfMN6yaaaZkocx0mDqTK0/edit#gid=0) named Travel Cities and Countries.
 
-![](./countries-cities.png)
+![](images/countries-cities.png)
 
 Lukily for us, we already have the spreadsheet downloaded and located in the current folder.  You can find the file in this lessons the GitHub repository. Next, we will use a Library called **Pandas** to get this data from the excel file into Python code. We already have the code for reading an excel file into Python written for us below. Let's check it out.
 
@@ -83,7 +83,7 @@ cities
 
 Ok, so the list of countries associated with each city has been assigned to the variable `cities`.  Now we will work with reading and manipulating this list of cities.
 
-### Working with our list of cities
+## Working with our list of cities
 
 First, access the third to last element and set it equal to the variable `salina`.
 
@@ -146,6 +146,6 @@ pyeongchang_keys # ['City', 'Country', 'Population', 'Area']
 type(pyeongchang_keys) # list
 ```
 
-### Summary
+## Summary
 
 In this section we saw how to retrieve and re-assign data in a dictionary.  We saw how we can retrieve a collection of information from a dictionary, like a list of it's keys and values, and we saw how we can work with a list of dictionaries.
