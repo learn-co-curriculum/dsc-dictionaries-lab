@@ -17,6 +17,12 @@ Here is a dictionary representing the city of Greenville, North Carolina.  The a
 greenville = {'Area': 68, 'City': 'Greenville', 'Country': 'USA', 'Population': 84554}
 ```
 
+
+```python
+# __SOLUTION__ 
+greenville = {'Area': 68, 'City': 'Greenville', 'Country': 'USA', 'Population': 84554}
+```
+
 > Remember to press shift + enter to run the code.
 
 Let's retrieve the population of the city and assign it to the variable `greenville_population`.
@@ -24,6 +30,13 @@ Let's retrieve the population of the city and assign it to the variable `greenvi
 
 ```python
 greenville_population = None # change None
+greenville_population # 84554
+```
+
+
+```python
+# __SOLUTION__ 
+greenville_population = greenville['Population'] # change None
 greenville_population # 84554
 ```
 
@@ -35,6 +48,13 @@ greenville_area = None
 greenville_area # 68
 ```
 
+
+```python
+# __SOLUTION__ 
+greenville_area = greenville['Area']
+greenville_area # 68
+```
+
 Now let's take a look at all of the keys in the `greenville` dictionary and coerce them into a list.  Assign this variable to the list `city_keys`.
 
 
@@ -43,11 +63,25 @@ city_keys = None
 city_keys # ['Area', 'City', 'Country', 'Population']
 ```
 
+
+```python
+# __SOLUTION__ 
+city_keys = list(greenville.keys())
+city_keys # ['Area', 'City', 'Country', 'Population']
+```
+
 Alright, next let's get all of the values in our greenville dictionary and coerce it into a list.  Assign that list to the variable `city_values`.
 
 
 ```python
 city_values = None
+city_values # [68, 'Greenville', 'USA', 84554]
+```
+
+
+```python
+# __SOLUTION__ 
+city_values = list(greenville.values())
 city_values # [68, 'Greenville', 'USA', 84554]
 ```
 
@@ -70,6 +104,15 @@ travel_df = pd.read_excel(file_name)
 cities = travel_df.to_dict('records')
 ```
 
+
+```python
+# __SOLUTION__ 
+import pandas as pd
+file_name = './cities.xlsx'
+travel_df = pd.read_excel(file_name)
+cities = travel_df.to_dict('records')
+```
+
 > Remember to press shift + enter.
 
 Great! We just used pandas to read the data from our excel file and turn each row of data into a dictionary. Again, don't worry about exactly how pandas is doing this, but know that pandas is a great tool when trying to accomplish a task such as turning data from an excel file into data we can use in Python.
@@ -78,6 +121,12 @@ Run the cell below to see what our data looks like now.
 
 
 ```python
+cities
+```
+
+
+```python
+# __SOLUTION__ 
 cities
 ```
 
@@ -94,11 +143,26 @@ salina
 # {'Area': 27, 'City': 'Salina Island', 'Country': 'Italy', 'Population': 4000}
 ```
 
+
+```python
+# __SOLUTION__ 
+salina = cities[-3] 
+salina 
+# {'Area': 27, 'City': 'Salina Island', 'Country': 'Italy', 'Population': 4000}
+```
+
 Now access the fourth country in the list, and set it's population equal to a variable called `los_cabos_pop`.
 
 
 ```python
 los_cabos_pop = None
+los_cabos_pop # 287651
+```
+
+
+```python
+# __SOLUTION__ 
+los_cabos_pop = cities[3]['Population']
 los_cabos_pop # 287651
 ```
 
@@ -110,11 +174,25 @@ city_count = None
 city_count # 12
 ```
 
+
+```python
+# __SOLUTION__ 
+city_count = len(cities)
+city_count # 12
+```
+
 Finally, change the spelling of the South Korean city, Pyeongchang, to the string `'PyeongChang'`, its alternative spelling.
 
 
 ```python
 cities[11]['City'] = None
+cities[11]['City'] # 'PyeongChang'
+```
+
+
+```python
+# __SOLUTION__ 
+cities[11]['City'] = "PyeongChang"
 cities[11]['City'] # 'PyeongChang'
 ```
 
@@ -128,11 +206,37 @@ pyeongchang_values # ['PyeongChang', 'South Korea', 2581000, 3194]
 type(pyeongchang_values) # list
 ```
 
+
+```python
+# __SOLUTION__ 
+pyeongchang_values = list(cities[11].values())
+
+pyeongchang_values # ['PyeongChang', 'South Korea', 2581000, 3194]
+type(pyeongchang_values) # list
+```
+
+
+
+
+    dict_values
+
+
+
 And now set `pyeongchang_keys` equal to a list of keys in the dictionary regarding Pyeongchang.
 
 
 ```python
 pyeongchang_keys = None
+
+
+pyeongchang_keys # ['City', 'Country', 'Population', 'Area']
+type(pyeongchang_keys) # list
+```
+
+
+```python
+# __SOLUTION__ 
+pyeongchang_keys = list(cities[11].keys())
 
 
 pyeongchang_keys # ['City', 'Country', 'Population', 'Area']
