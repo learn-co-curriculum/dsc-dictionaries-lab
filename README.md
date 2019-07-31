@@ -81,6 +81,45 @@ Run the cell below to see what our data looks like now.
 cities
 ```
 
+
+
+
+    [{'City': 'Solta', 'Country': 'Croatia', 'Population': 1700, 'Area': 59},
+     {'City': 'Greenville', 'Country': 'USA', 'Population': 84554, 'Area': 68},
+     {'City': 'Buenos Aires',
+      'Country': 'Argentina',
+      'Population': 13591863,
+      'Area': 4758},
+     {'City': 'Los Cabos',
+      'Country': 'Mexico',
+      'Population': 287651,
+      'Area': 3750},
+     {'City': 'Walla Walla Valley',
+      'Country': 'USA',
+      'Population': 32237,
+      'Area': 33},
+     {'City': 'Marakesh', 'Country': 'Morocco', 'Population': 928850, 'Area': 200},
+     {'City': 'Albuquerque',
+      'Country': 'New Mexico',
+      'Population': 559277,
+      'Area': 491},
+     {'City': 'Archipelago Sea',
+      'Country': 'Finland',
+      'Population': 60000,
+      'Area': 8300},
+     {'City': 'Iguazu Falls',
+      'Country': 'Argentina',
+      'Population': 0,
+      'Area': 672},
+     {'City': 'Salina Island', 'Country': 'Italy', 'Population': 4000, 'Area': 27},
+     {'City': 'Toronto', 'Country': 'Canada', 'Population': 630, 'Area': 2731571},
+     {'City': 'Pyeongchang',
+      'Country': 'South Korea',
+      'Population': 2581000,
+      'Area': 3194}]
+
+
+
 Ok, so the list of countries associated with each city has been assigned to the variable `cities`.  Now we will work with reading and manipulating this list of cities.
 
 ### Working with our list of cities
