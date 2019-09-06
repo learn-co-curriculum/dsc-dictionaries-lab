@@ -3,7 +3,7 @@
 
 ## Introduction
 Now that we know about dictionaries in Python, it is time to practice using them. In this lesson, you'll use your knowledge of dictionaries to retrieve and assign data about various cities.
-M
+
 ## Objectives
 You will be able to:
 * Understand dictionaries and how to use them
