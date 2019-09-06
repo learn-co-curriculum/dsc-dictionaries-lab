@@ -57,7 +57,7 @@ We can retrieve our data from an excel or Google sheets like the one [shown here
 
 ![](images/countries-cities.png)
 
-Lukily for us, we already have the spreadsheet downloaded and located in the current folder.  You can find the file in this lessons the GitHub repository. Next, we will use a Library called **Pandas** to get this data from the excel file into Python code. We already have the code for reading an excel file into Python written for us below. Let's check it out.
+Luckily for us, we already have the spreadsheet downloaded and located in the current folder.  You can find the file in this lessons the GitHub repository. Next, we will use a Library called **Pandas** to get this data from the excel file into Python code. We already have the code for reading an excel file into Python written for us below. Let's check it out.
 
 > **Note:** To import a library or module in Python, we do so by writing `import` followed by the name of the thing we want to import. We can optionally include an *alias* for our import, which is done by writing **as** after the name of the thing we are importing followed by the name we would like to use for our *alias*. **Do not worry** about aliases right now. Just know that the *convention* for importing the pandas library is to import it and alias it as `pd` like we see below.   
 We'll talk about packages and pandas specifically in much more detail soon enough!
@@ -133,7 +133,7 @@ salina
 # {'Area': 27, 'City': 'Salina Island', 'Country': 'Italy', 'Population': 4000}
 ```
 
-Now access the fourth country in the list, and set it's population equal to a variable called `los_cabos_pop`.
+Now access the fourth country in the list, and set its population equal to a variable called `los_cabos_pop`.
 
 
 ```python
@@ -180,4 +180,4 @@ type(pyeongchang_keys) # list
 
 ## Summary
 
-In this section we saw how to retrieve and re-assign data in a dictionary.  We saw how we can retrieve a collection of information from a dictionary, like a list of it's keys and values, and we saw how we can work with a list of dictionaries.
+In this section we saw how to retrieve and re-assign data in a dictionary.  We saw how we can retrieve a collection of information from a dictionary, like a list of its keys and values, and we saw how we can work with a list of dictionaries.
