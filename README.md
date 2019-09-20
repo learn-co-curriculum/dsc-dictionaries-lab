@@ -119,7 +119,7 @@ We can retrieve our data from an excel or Google sheets like the one [shown here
 
 ![](images/countries-cities.png)
 
-Luckily for us, we already have the spreadsheet downloaded and located in the current folder.  You can find the file in this lessons the GitHub repository. Next, we will use a Library called **Pandas** to get this data from the excel file into Python code. We already have the code for reading an excel file into Python written for us below. Let's check it out.
+Luckily for us, we already have the spreadsheet downloaded and located in the current folder.  You can find the file (`cities.xlsx`) in this lesson's GitHub repository. Next, we will use a library called **Pandas** to get this data from the excel file into Python code. We already have the code for reading an excel file into Python written for us below. Let's check it out.
 
 > **Note:** To import a library or module in Python, we do so by writing `import` followed by the name of the thing we want to import. We can optionally include an *alias* for our import, which is done by writing **as** after the name of the thing we are importing followed by the name we would like to use for our *alias*. **Do not worry** about aliases right now. Just know that the *convention* for importing the pandas library is to import it and alias it as `pd` like we see below.   
 We'll talk about packages and pandas specifically in much more detail soon enough!
@@ -143,7 +143,7 @@ cities = travel_df.to_dict('records')
 
 > Remember to press shift + enter.
 
-Great! We just used pandas to read the data from our excel file and turn each row of data into a dictionary. Again, don't worry about exactly how pandas is doing this, but know that pandas is a great tool when trying to accomplish a task such as turning data from an excel file into data we can use in Python.
+Great! We just used pandas to read the data from our excel file and turn each row of data into a dictionary. Again, don't worry about exactly how Pandas is doing this, but know that Pandas is a great tool when trying to accomplish a task such as turning data from an excel file into data we can use in Python.
 
 Run the cell below to see what our data looks like now.
 
@@ -236,7 +236,7 @@ cities
 
 
 
-Ok, so the list of countries associated with each city has been assigned to the variable `cities`.  Now we will work with reading and manipulating this list of cities.
+Now we will work with reading and manipulating this list of dictionaries, `cities`.
 
 ### Working with our list of cities
 
@@ -264,7 +264,7 @@ salina
 
 
 
-Now access the fourth country in the list, and set its population equal to a variable called `los_cabos_pop`.
+Now access the fourth city in the list, and set its population equal to a variable called `los_cabos_pop`.
 
 
 ```python
@@ -330,7 +330,7 @@ cities[11]['City'] # 'PyeongChang'
 
 
 
-Now let's work on retrieving a collection of information about a dictionary.  Use the appropriate dictionary function to return a list of values in the dictionary regarding Pyeongchang.   Assign the list to the variable `pyeongchang_values`.
+Now let's work on retrieving a collection of information about a dictionary.  Use the appropriate dictionary method to return a list of values in the dictionary regarding Pyeongchang.  Assign the list to the variable `pyeongchang_values`.
 
 
 ```python
