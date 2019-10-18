@@ -6,7 +6,8 @@ Now that we know about dictionaries in Python, it is time to practice using them
 
 ## Objectives
 You will be able to:
-* Understand dictionaries and how to use them
+* Assign values in a dictionary
+* Access keys and values in a dictionary
 
 ## Instructions
 
@@ -53,14 +54,14 @@ city_values # [68, 'Greenville', 'USA', 84554]
 
 ## Working with multiple cities
 
-We can retrieve our data from an excel or Google sheets like the one [shown here](https://docs.google.com/spreadsheets/d/1BTJMMFH9t4p5UmHj5kiC6PGfMN6yaaaZkocx0mDqTK0/edit#gid=0) named Travel Cities and Countries.
+We can retrieve our data from an excel or Google sheet like the one [shown here](https://docs.google.com/spreadsheets/d/1BTJMMFH9t4p5UmHj5kiC6PGfMN6yaaaZkocx0mDqTK0/edit#gid=0) named Travel Cities and Countries.
 
 ![](images/countries-cities.png)
 
 Luckily for us, we already have the spreadsheet downloaded and located in the current folder.  You can find the file (`cities.xlsx`) in this lesson's GitHub repository. Next, we will use a library called **Pandas** to get this data from the excel file into Python code. We already have the code for reading an excel file into Python written for us below. Let's check it out.
 
-> **Note:** To import a library or module in Python, we do so by writing `import` followed by the name of the thing we want to import. We can optionally include an *alias* for our import, which is done by writing **as** after the name of the thing we are importing followed by the name we would like to use for our *alias*. **Do not worry** about aliases right now. Just know that the *convention* for importing the pandas library is to import it and alias it as `pd` like we see below.   
-We'll talk about packages and pandas specifically in much more detail soon enough!
+> **Note:** To import a library or module in Python, we do so by writing `import` followed by the name of the thing we want to import. We can optionally include an *alias* for our import, which is done by writing **as** after the name of the thing we are importing followed by the name we would like to use for our *alias*. **Do not worry** about aliases right now. Just know that the *convention* for importing the Pandas library is to import it and alias it as `pd` like we see below.   
+We'll talk about packages and Pandas specifically in much more detail soon enough!
 
 
 ```python
@@ -72,7 +73,7 @@ cities = travel_df.to_dict('records')
 
 > Remember to press shift + enter.
 
-Great! We just used pandas to read the data from our excel file and turn each row of data into a dictionary. Again, don't worry about exactly how Pandas is doing this, but know that Pandas is a great tool when trying to accomplish a task such as turning data from an excel file into data we can use in Python.
+Great! We just used Pandas to read the data from our excel file and turn each row of data into a dictionary. Again, don't worry about exactly how Pandas is doing this, but know that Pandas is a great tool when trying to accomplish a task such as turning data from an excel file into data we can use in Python.
 
 Run the cell below to see what our data looks like now.
 
@@ -180,4 +181,4 @@ type(pyeongchang_keys) # list
 
 ## Summary
 
-In this section we saw how to retrieve and re-assign data in a dictionary.  We saw how we can retrieve a collection of information from a dictionary, like a list of its keys and values, and we saw how we can work with a list of dictionaries.
+In this section, we saw how to assign, retrieve, and re-assign data in a dictionary.  We saw how we can retrieve a collection of information from a dictionary, like a list of its keys and values, and we saw how we can work with a list of dictionaries.
