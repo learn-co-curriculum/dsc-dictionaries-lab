@@ -57,7 +57,7 @@ city_values # [68, 'Greenville', 'USA', 84554]
 
 We can retrieve our data from an excel or Google sheet like the one [shown here](https://docs.google.com/spreadsheets/d/1BTJMMFH9t4p5UmHj5kiC6PGfMN6yaaaZkocx0mDqTK0/edit#gid=0) named Travel Cities and Countries.
 
-![](images/countries-cities.png)
+![](https://curriculum-content.s3.amazonaws.com/data-science/images/countries-cities.png)
 
 Luckily for us, we already have the spreadsheet downloaded and located in the current folder.  You can find the file (`cities.xlsx`) in this lesson's GitHub repository. Next, we will use a library called **Pandas** to get this data from the excel file into Python code. We already have the code for reading an excel file into Python written for us below. Let's check it out.
 
