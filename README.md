@@ -55,7 +55,7 @@ city_values # [68, 'Greenville', 'USA', 84554]
 
 ## Working with multiple cities
 
-We can retrieve our data from an excel or Google sheet like the one [shown here](https://docs.google.com/spreadsheets/d/1BTJMMFH9t4p5UmHj5kiC6PGfMN6yaaaZkocx0mDqTK0/edit#gid=0) named Travel Cities and Countries.
+We can retrieve our data from an excel or Google sheet like the one shown below.
 
 ![](https://curriculum-content.s3.amazonaws.com/data-science/images/countries-cities.png)
 
