@@ -7,7 +7,7 @@ Now that we know about dictionaries in Python, it is time to practice using them
 
 Go to your terminal and for your learn-env (or whatever environment you are using, but I assume it is that one):
 
-conda install -c anaconda openpyxl
+'conda install -c anaconda openpyxl'
 
 Install and if it asks you any questions, then responding 'Y' should be the correct choice.
 
