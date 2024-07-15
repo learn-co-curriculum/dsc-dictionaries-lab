@@ -3,6 +3,20 @@
 ## Introduction
 Now that we know about dictionaries in Python, it is time to practice using them. In this lesson, you'll use your knowledge of dictionaries to retrieve and assign data about various cities.
 
+## Additional library
+
+Due to an update for Python, you need another library to be able to open the data.
+
+Go to your terminal and for your learn-env (or whatever environment you are using, but I assume it is that one):
+
+```python
+conda install -c anaconda openpyxl
+```
+
+Install and if it asks you any questions, then responding 'Y' should be the correct choice.
+
+After openpyxl has been correctly installed, try again with a "fresh" kernel and you should be good to go.
+
 ## Objectives
 
 You will be able to:
